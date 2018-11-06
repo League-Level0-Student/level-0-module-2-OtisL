@@ -16,8 +16,19 @@ public class AnimalFarm {
 		/*
 		 * 1. Ask the user which animal they want, then play the sound of that animal.
 		 */
-		
+		for(int i=10; i>0; i--) {
+		String yo = JOptionPane.showInputDialog(null, "Do you want a cow, duck, or a dog? You have "+i+" animals left.", "The Farm", JOptionPane.PLAIN_MESSAGE);
+		if (yo.equals("cow")) {
+			playMoo();
+		}else if (yo.equals("duck")) {
+			playQuack();
+		}else if (yo.equals("dog")) {
+			playWoof();
+		}else {
+			JOptionPane.showMessageDialog(null, "Your animal of "+yo+" was not found. Please \n -Try the animals shown \n -Check your spelling \n -Don't use capitals", "404-Not Found", JOptionPane.ERROR_MESSAGE);
+		}
 		/* 2. Make it so that the user can keep entering new animals. */
+		}
 	}
 
 	void playMoo() {
