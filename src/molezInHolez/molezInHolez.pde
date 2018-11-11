@@ -19,7 +19,7 @@ void drawMole(int moleX, int moleY) {
      ellipse(moleX+10, moleY-15, 10, 10);
      
      ellipse(moleX-5, moleY-10, 10, 10); // nose
-      ellipse(moleX-, moleY-10, 10, 10); // nose
+     ellipse(moleX+5, moleY-10, 10, 10); // nose
      ellipse(moleX, moleY+10, 20, 5); // mouth
 }
 
