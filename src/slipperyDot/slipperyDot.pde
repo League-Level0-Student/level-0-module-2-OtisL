@@ -1,5 +1,6 @@
   // 4. create three integer variables to  
     //    represent the x, y, and the size of the ellipse
+   
   int dotSize = 100;
   int dotX = 300;
   int dotY = 300;
@@ -21,6 +22,8 @@
     
     void mousePressed() {
       int distance = getDistance(mouseX, mouseY, dotX, dotY);
+      int noob = (int) random(601);
+      int nub = (int) random(601);
       //6a. create an integer variable called distance
       //6b. use the getDistance method to initialize your varible
       //    use the mouse's x and y and the x and y of your ellipse 
@@ -31,7 +34,8 @@
       //8a. make an if statement to check if the distance variable
       //   is within the size of the ellipse
       if(distance <= dotSize){
-        dotX=;  
+        dotX=noob;  
+        dotY=nub;
       }
         //8b.  set the x and y of the ellipse to a random location on the window
        
